@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const CharacterPageContainer = styled.div`
+export const OCharacterPageContainer = styled.div`
   position: relative;
   height: 100vh;
 `;
 
-export const Background = styled.img`
+export const OBackground = styled.img`
   position: absolute;
   left: 50%;
   top: 50%;
@@ -15,7 +15,7 @@ export const Background = styled.img`
   max-width: 70%;
 `;
 
-export const PrimaryCharacter = styled.img`
+export const OPrimaryCharacter = styled.img`
   position: absolute;
   left: 25%;
   top: 50%;
@@ -26,7 +26,7 @@ export const PrimaryCharacter = styled.img`
   z-index: 1;
 `;
 
-export const SecondaryCharacter = styled.img`
+export const OSecondaryCharacter = styled.img`
   position: absolute;
   left: 15%;
   top: 50%;
@@ -34,4 +34,16 @@ export const SecondaryCharacter = styled.img`
   width: auto;
   height: auto;
   max-height: 50%;
+`;
+
+export const OName = styled.h2`
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  transform: translate(0, -50%);
+  width: auto;
+  height: auto;
+  max-height: 50%;
+  font-size: 2.8rem;
+  font-family: 'SF Pro Display';
 `;

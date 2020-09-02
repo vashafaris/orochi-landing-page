@@ -12,12 +12,20 @@ const Container = styled.nav`
   padding-left: 7.2rem;
   padding-right: 7.2rem;
 
+  a,
+  img {
+    cursor: pointer;
+  }
+
   .left {
     display: flex;
     flex: 1;
     margin-right: 7.4rem;
     .item {
       margin-right: 3.6rem;
+    }
+    .gold {
+      color: #c69e4b;
     }
   }
 
@@ -46,7 +54,7 @@ const Header = () => (
       <a className='item'>Story</a>
       <a className='item'>Characters</a>
       <a className='item'>Soundtrack</a>
-      <a className='item'>Pre Order Now</a>
+      <a className='item gold'>Pre Order Now</a>
     </div>
     <div className='right'>
       <a>Search</a>
