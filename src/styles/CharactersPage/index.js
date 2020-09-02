@@ -12,6 +12,7 @@ export const Background = styled.img`
   transform: translate(-50%, -50%);
   width: auto;
   height: auto;
+  max-width: 70%;
 `;
 
 export const PrimaryCharacter = styled.img`
@@ -21,6 +22,7 @@ export const PrimaryCharacter = styled.img`
   transform: translate(0, -50%);
   width: auto;
   height: auto;
+  max-height: 75%;
   z-index: 1;
 `;
 
@@ -31,4 +33,5 @@ export const SecondaryCharacter = styled.img`
   transform: translate(0, -50%);
   width: auto;
   height: auto;
+  max-height: 50%;
 `;
