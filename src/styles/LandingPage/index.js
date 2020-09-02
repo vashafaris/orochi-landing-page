@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const LandingPageContainer = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 7.2rem;
   img {
     height: auto;
