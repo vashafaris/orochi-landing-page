@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import GlobalStyle from '../src/styles/GlobalStyle';
+import Header from '../src/components/Header';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,6 +11,7 @@ function MyApp({ Component, pageProps }) {
         <link rel='icon' href='/assets/logo-brand.png' />
       </Head>
       <GlobalStyle />
+      <Header />
       <Component {...pageProps} />
     </>
   );
