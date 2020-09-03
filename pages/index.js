@@ -4,6 +4,8 @@ import {
   CardSection,
   CharacterSection,
   Orochi,
+  TrailerSection,
+  TrailerVideo,
 } from '../src/styles/LandingPage';
 import Text from '../src/components/Text';
 import { Row, Column } from '../src/components/Grid';
@@ -18,33 +20,33 @@ export default function Home() {
     },
     {
       image: 'card-2.png',
-      title: 'Samurai x Dynasty',
+      title: 'Rulers of Darkness',
       description:
-        'For the first time ever, your favorite characters from the world of Samurai Warriors and Dynasty Warriors face up with and against each other in this new chaotic world that Orochi created. All 200 characters can be unlocked and are playable by playing and completing secret missions.',
+        'A new faction that will create a storyline that you’ve never seen before in the Warriors series. Discover all these deadly characters within the game and know their story.',
     },
     {
       image: 'card-3.png',
-      title: 'Samurai x Dynasty',
+      title: 'New Legendary Characters',
       description:
-        'For the first time ever, your favorite characters from the world of Samurai Warriors and Dynasty Warriors face up with and against each other in this new chaotic world that Orochi created. All 200 characters can be unlocked and are playable by playing and completing secret missions.',
+        'The villains are not without additional resistance. Introducing 6 new additional characters that will also help your journey to fight against Orochi and his minions. ',
     },
     {
       image: 'card-4.png',
-      title: 'Samurai x Dynasty',
+      title: 'New Attack Move',
       description:
-        'For the first time ever, your favorite characters from the world of Samurai Warriors and Dynasty Warriors face up with and against each other in this new chaotic world that Orochi created. All 200 characters can be unlocked and are playable by playing and completing secret missions.',
+        'We’re adding a lot of new attack move for you beloved characters. Be sure to upgrade them as you progress along the storyline to unleash their full potential',
     },
     {
       image: 'card-5.png',
-      title: 'Samurai x Dynasty',
+      title: 'Modern Graphics',
       description:
-        'For the first time ever, your favorite characters from the world of Samurai Warriors and Dynasty Warriors face up with and against each other in this new chaotic world that Orochi created. All 200 characters can be unlocked and are playable by playing and completing secret missions.',
+        'We’re using the new Unreal Engine to remodel our existing characters and battlefield to give you a more immersive next gen experience.',
     },
     {
       image: 'card-6.png',
-      title: 'Samurai x Dynasty',
+      title: 'Wombo Combo',
       description:
-        'For the first time ever, your favorite characters from the world of Samurai Warriors and Dynasty Warriors face up with and against each other in this new chaotic world that Orochi created. All 200 characters can be unlocked and are playable by playing and completing secret missions.',
+        'We understand you really love the combo mechanics, now we’re giving more rewarding and satisfying rewards every time you finish a combo.',
     },
   ];
 
@@ -53,28 +55,51 @@ export default function Home() {
       <LandingSection>
         <img src='/assets/landing/logo.png' />
         <div className='content-container'>
-          <Text>Coming September 2007</Text>
+          <Row>
+            <Column>
+              <h1>Coming September 2007</h1>
+            </Column>
+            <Column>
+              <button type='button' className='left-btn'>
+                KNOW MORE
+              </button>
+              <button type='button' className='right-btn'>
+                PRE ORDER NOW
+              </button>
+            </Column>
+          </Row>
         </div>
       </LandingSection>
 
+      <TrailerSection>
+        <iframe
+          height='400'
+          width='700'
+          src='https://www.youtube.com/embed/pGqfPJ5UTAY'
+        ></iframe>
+      </TrailerSection>
+
       <CardSection>
-        {/* <Row>
-          <Text fontSize={'6rem'} fontWeight={'800'}>
-            The All New
-          </Text>
-        </Row> */}
+        <Text fontSize={'6rem'} fontWeight={'800'}>
+          The All New
+        </Text>
         <Row>
           {cardsData.map((item) => (
             <Column lg={3}>
-              <img src={`/assets/cards/${item.image}`} />
-              {/* <Text fontWeight={'bold'}>{item.title}</Text>
-              <Text>{item.description}</Text> */}
+              <div className='card'>
+                <img src={`/assets/cards/${item.image}`} />
+                <h2 fontWeight={'bold'}>{item.title}</h2>
+                <p>{item.description}</p>
+              </div>
             </Column>
           ))}
         </Row>
       </CardSection>
 
       <CharacterSection>
+        {/* <div className='title'>
+          <h1>Main Characters</h1>
+        </div> */}
         <Orochi>
           <img src='/assets/characters/char-1-bg.png' className='background' />
           <img
