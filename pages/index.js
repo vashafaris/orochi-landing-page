@@ -97,9 +97,9 @@ export default function Home() {
       </CardSection>
 
       <CharacterSection>
-        <div className='title'>
+        {/* <div className='title'>
           <h1>Main Characters</h1>
-        </div>
+        </div> */}
         <Orochi>
           <img src='/assets/characters/char-1-bg.png' className='background' />
           <img

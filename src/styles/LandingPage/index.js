@@ -136,7 +136,7 @@ export const Orochi = styled.div`
   h2 {
     position: absolute;
     left: 30%;
-    top: 15%;
+    top: 10%;
     transform: translate(0, -50%);
     width: auto;
     height: auto;
