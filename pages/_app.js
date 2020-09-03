@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Warriors Orochi</title>
-        <link rel='icon' href='/assets/logo-brand.png' />
+        {/* <link rel='icon' href='/assets/logo-brand.png' /> */}
       </Head>
       <GlobalStyle />
       <Header />

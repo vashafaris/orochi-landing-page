@@ -1,13 +1,10 @@
 import Head from 'next/head';
-import { LandingPageContainer } from '../src/styles/LandingPage';
-import { CardsPageContainer } from '../src/styles/CardsPage';
 import {
-  OCharacterPageContainer,
-  OBackground,
-  OPrimaryCharacter,
-  OSecondaryCharacter,
-  OName,
-} from '../src/styles/CharactersPage/Orochi';
+  LandingSection,
+  CardSection,
+  CharacterSection,
+  Orochi,
+} from '../src/styles/LandingPage';
 import Text from '../src/components/Text';
 import { Row, Column } from '../src/components/Grid';
 
@@ -53,11 +50,14 @@ export default function Home() {
 
   return (
     <>
-      <LandingPageContainer>
-        <img src='/assets/bg-landing-page.png' />
-      </LandingPageContainer>
+      <LandingSection>
+        <img src='/assets/landing/logo.png' />
+        <div className='content-container'>
+          <Text>Coming September 2007</Text>
+        </div>
+      </LandingSection>
 
-      <CardsPageContainer>
+      <CardSection>
         {/* <Row>
           <Text fontSize={'6rem'} fontWeight={'800'}>
             The All New
@@ -72,14 +72,24 @@ export default function Home() {
             </Column>
           ))}
         </Row>
-      </CardsPageContainer>
+      </CardSection>
 
-      <OCharacterPageContainer>
-        <OBackground src='/assets/characters/char-1-bg.png' />
-        <OPrimaryCharacter src='/assets/characters/char-1-primary.png' />
-        <OSecondaryCharacter src='/assets/characters/char-1-secondary.png' />
-        <OName>Orochi (遠呂智)</OName>
-      </OCharacterPageContainer>
+      <CharacterSection>
+        <Orochi>
+          <img src='/assets/characters/char-1-bg.png' className='background' />
+          <img
+            src='/assets/characters/char-1-primary.png'
+            alt=''
+            className='primary-img'
+          />
+          <img
+            src='/assets/characters/char-1-secondary.png'
+            alt=''
+            className='secondary-img'
+          />
+          <h2>Orochi (遠呂智)</h2>
+        </Orochi>
+      </CharacterSection>
     </>
   );
 }
