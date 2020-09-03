@@ -5,12 +5,18 @@ const Container = styled.nav`
   top: 0;
   height: 7.2rem;
   width: 100%;
+  z-index: 10;
   display: flex;
   align-items: center;
   background: black;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   padding-left: 7.2rem;
   padding-right: 7.2rem;
+
+  a,
+  img {
+    cursor: pointer;
+  }
 
   .left {
     display: flex;
@@ -19,6 +25,9 @@ const Container = styled.nav`
     .item {
       margin-right: 3.6rem;
     }
+    .gold {
+      color: #c69e4b;
+    }
   }
 
   .right {
@@ -26,6 +35,12 @@ const Container = styled.nav`
     flex: 1;
     justify-content: flex-end;
     margin-left: 7.4rem;
+    img {
+      width: auto;
+      height: auto;
+      max-height: 3.6rem;
+      margin-left: 3.6rem;
+    }
   }
 `;
 
@@ -40,16 +55,17 @@ const Logo = styled.img`
 
 const Header = () => (
   <Container>
-    <Logo src='/assets/header-logo.png' />
+    {/* <Logo src='/assets/header-logo.png' /> */}
     <div className='left'>
       <img src='assets/burger-menu.png' className='item' />
       <a className='item'>Story</a>
       <a className='item'>Characters</a>
       <a className='item'>Soundtrack</a>
-      <a className='item'>Pre Order Now</a>
+      <a className='item gold'>Pre Order Now</a>
     </div>
     <div className='right'>
-      <a>Search</a>
+      <img src='assets/header/brand-2.png' />
+      <img src='assets/header/brand-1.png' />
     </div>
   </Container>
 );
