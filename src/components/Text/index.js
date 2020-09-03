@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const TextStyled = styled.p`
+  position: relative;
   font-size: ${({ fontSize }) => fontSize && fontSize};
   font-weight: ${({ fontWeight }) => fontWeight && fontWeight};
   font-family: ${({ type }) => type === 'text' && 'SF Pro Text'};
