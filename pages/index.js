@@ -101,6 +101,7 @@ export default function Home() {
           <h1>Main Characters</h1>
         </div> */}
         <Orochi>
+          <h2 className='name'>Orochi (遠呂智)</h2>
           <img src='/assets/characters/char-1-bg.png' className='background' />
           <img
             src='/assets/characters/char-1-primary.png'
@@ -112,7 +113,37 @@ export default function Home() {
             alt=''
             className='secondary-img'
           />
-          <h2>Orochi (遠呂智)</h2>
+          <img
+            src='/assets/characters/char-1-line-up.png'
+            alt=''
+            className='line-up-img'
+          />
+          <img
+            src='/assets/characters/char-1-line-down.png'
+            alt=''
+            className='line-down-img'
+          />
+          <div className='info-up'>
+            <h2 className='title-char'>Role</h2>
+            <p className='description-char'>
+              Orochi is an immensely powerful being that folded space and time,
+              combining the Three Kingdoms era of China with the Sengoku period
+              of Japan, in order to provide himself with a challenge. Obsessed
+              with the entropic decay of the universe, Orochi seeks someone
+              worthy of his strength. Perhaps this is one big cosmic death wish,
+              but Orochi has shattered the space-time continuum just to find
+              someone to best him. To Orochi, his existence is confirmed in the
+              nonexistence of others.
+            </p>
+          </div>
+          <div className='info-down'>
+            <h2 className='title-char'>Eien no kumon (永遠の苦悶)</h2>
+            <p className='description-char'>
+              The Eternal Agony is Orochi’s weapon of choice. Crafted by the
+              dark lord Manda in the 7th hell, Orochi harvest the soul and turns
+              them into his power
+            </p>
+          </div>
         </Orochi>
       </CharacterSection>
     </>

@@ -133,7 +133,63 @@ export const Orochi = styled.div`
     max-height: 50%;
   }
 
-  h2 {
+  .line-up-img {
+    z-index: 2;
+    position: absolute;
+    right: 35%;
+    top: 30%;
+    width: auto;
+    height: auto;
+    max-width: 15%;
+  }
+
+  .line-down-img {
+    z-index: 2;
+    position: absolute;
+    right: 35%;
+    bottom: 30%;
+    width: auto;
+    height: auto;
+    max-width: 20%;
+  }
+
+  .info-up {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    width: 25%;
+    transform: translate(1rem, -1rem);
+  }
+
+  .info-down {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    width: 25%;
+    transform: translate(1rem, -1.2rem);
+  }
+
+  .title-char {
+    left: 0;
+    font-size: 2.4rem;
+    font-weight: bold;
+    position: relative;
+    line-height: 0;
+  }
+
+  .description-char {
+    color: #d6d6d6;
+    line-height: 1.5rem;
+    font-size: 1.4rem;
+    font-family: 'SF Pro Text';
+    font-weight: medium;
+  }
+
+  .name {
     position: absolute;
     left: 30%;
     top: 10%;
