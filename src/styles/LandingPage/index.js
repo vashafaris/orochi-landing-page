@@ -98,6 +98,17 @@ export const CardSection = styled.section`
   .card {
     display: block;
     padding: 0.5rem;
+
+    .title-card {
+      font-size: 2.4rem;
+      font-weight: semibold;
+    }
+
+    .description-card {
+      font-size: 1.4rem;
+      font-family: 'SF Pro Text';
+      font-weight: medium;
+    }
   }
 `;
 
@@ -232,7 +243,6 @@ export const Honda = styled.div`
   .name {
     position: absolute;
     right: 20%;
-    /* top: 5%; */
     transform: translate(0, -50%);
     max-height: 50%;
     font-size: 2.8rem;

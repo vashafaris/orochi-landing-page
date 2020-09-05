@@ -55,7 +55,6 @@ const Logo = styled.img`
 
 const Header = () => (
   <Container>
-    {/* <Logo src='/assets/header-logo.png' /> */}
     <div className='left'>
       <img src='assets/burger-menu.png' className='item' />
       <a className='item'>Story</a>

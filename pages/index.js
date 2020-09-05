@@ -103,8 +103,10 @@ export default function Home() {
             <Column lg={3}>
               <div className='card'>
                 <img src={`/assets/cards/${item.image}`} />
-                <h2 fontWeight={'bold'}>{item.title}</h2>
-                <p>{item.description}</p>
+                <h2 className='title-card' fontWeight={'bold'}>
+                  {item.title}
+                </h2>
+                <p className='description-card'>{item.description}</p>
               </div>
             </Column>
           ))}
