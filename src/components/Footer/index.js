@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  height: 7.2rem;
   justify-content: center;
   align-items: center;
+  margin-top: 7.2rem;
 
   a {
     color: #ff3d25;
@@ -20,20 +20,40 @@ const Container = styled.div`
     margin-right: 1.6rem;
     margin-left: 1.6rem;
   }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
 `;
 
 export const Footer = () => (
   <Container>
-    <p>Made with ❤️ in Bandoeng</p>
-    <p className='margin'>✹</p>
-    <p>
-      A design by{' '}
-      <a
-        target='_blank'
-        href='https://www.behance.net/gallery/102993663/Warriors-Orochi-Game-Appreciation-Website-Mockup'
-      >
-        <span>JR </span>
-      </a>
-    </p>
+    <>
+      <h1>All rights reserved</h1>
+    </>
+    <div className='row'>
+      <p>Made with ❤️ in Bandoeng</p>
+      <p className='margin'>✹</p>
+      <p>
+        A design by{' '}
+        <a
+          target='_blank'
+          href='https://www.behance.net/gallery/102993663/Warriors-Orochi-Game-Appreciation-Website-Mockup'
+        >
+          <span>JR</span>
+        </a>
+      </p>
+      <p className='margin'>✹</p>
+      <p>
+        Code here{' '}
+        <a
+          target='_blank'
+          href='https://github.com/vashafaris/orochi-landing-page'
+        >
+          <span>github.com</span>
+        </a>
+      </p>
+    </div>
   </Container>
 );

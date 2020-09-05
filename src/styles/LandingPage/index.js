@@ -115,7 +115,8 @@ export const CardSection = styled.section`
 
     .description-card {
       font-size: 1.4rem;
-      line-height: 2.2rem;
+      line-height: 148.3%;
+      letter-spacing: 0.005em;
       font-family: 'SF Pro Text';
       font-weight: medium;
       margin-top: 0.4rem;
@@ -232,7 +233,8 @@ export const Orochi = styled.div`
 
   .description-char {
     color: #d6d6d6;
-    line-height: 2.2rem;
+    line-height: 161.8%;
+    letter-spacing: 0.005em;
     font-size: 1.4rem;
     font-family: 'SF Pro Text';
     font-weight: medium;
@@ -360,7 +362,8 @@ export const Honda = styled.div`
 
   .description-char {
     color: #d6d6d6;
-    line-height: 2.2rem;
+    line-height: 161.8%;
+    letter-spacing: 0.005em;
     font-size: 1.4rem;
     font-family: 'SF Pro Text';
     font-weight: medium;
@@ -478,7 +481,8 @@ export const Lubu = styled.div`
 
   .description-char {
     color: #d6d6d6;
-    line-height: 2.2rem;
+    line-height: 161.8%;
+    letter-spacing: 0.005em;
     font-size: 1.4rem;
     font-family: 'SF Pro Text';
     font-weight: medium;
@@ -504,7 +508,7 @@ export const OSTSection = styled.section`
     font-size: 1.8rem;
     margin-left: 20%;
     margin-right: 20%;
-    letter-spacing: 1%;
+    letter-spacing: 0.01em;
     line-height: 150%;
   }
 
@@ -539,7 +543,7 @@ export const POSection = styled.section`
     font-size: 1.8rem;
     margin-left: 20%;
     margin-right: 20%;
-    letter-spacing: 1%;
+    letter-spacing: 0.01em;
     line-height: 150%;
   }
 
@@ -548,11 +552,15 @@ export const POSection = styled.section`
     display: flex;
     width: 100%;
     justify-content: center;
+    align-items: baseline;
 
     .console {
       width: auto;
       height: auto;
-      max-width: 20%;
+      max-width: 15%;
+      &:not(:last-child) {
+        margin-right: 2.4rem;
+      }
     }
   }
 
