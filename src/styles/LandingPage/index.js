@@ -9,17 +9,18 @@ export const LandingSection = styled.section`
 
   img {
     position: absolute;
-    bottom: 40%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%);
     width: auto;
     height: auto;
     max-width: 45%;
+    max-height: 35%;
   }
 
   .content-container {
     position: absolute;
-    bottom: 5%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -66,6 +67,7 @@ export const TrailerSection = styled.section`
     top: 50%;
     left: 0;
     transform: translate(0, -50%);
+    max-height: 90%;
   }
 
   .bg-right {
@@ -73,6 +75,7 @@ export const TrailerSection = styled.section`
     position: absolute;
     bottom: -30%;
     right: 0;
+    max-height: 90%;
   }
 `;
 
@@ -167,7 +170,7 @@ export const Orochi = styled.div`
     display: block;
     z-index: 2;
     position: absolute;
-    right: 10%;
+    left: 65%;
     top: 30%;
     width: 25%;
     transform: translate(1rem, -1rem);
@@ -182,9 +185,9 @@ export const Orochi = styled.div`
     flex-direction: column;
     z-index: 2;
     position: absolute;
-    right: 10%;
+    left: 65%;
     top: 70%;
-    width: 25%;
+    width: 30%;
     transform: translate(1rem, -1.2rem);
 
     @media (max-width: 1277px) {

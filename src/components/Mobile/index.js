@@ -15,6 +15,6 @@ const Container = styled.div`
 export const Mobile = () => (
   <Container>
     <h1>📵</h1>
-    <p>Please open via desktop. 🖥</p>
+    <p>🖥 Please open via desktop.</p>
   </Container>
 );
