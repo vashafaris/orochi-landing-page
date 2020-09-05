@@ -103,7 +103,7 @@ export default function Home() {
         </Text>
         <Row>
           {cardsData.map((item) => (
-            <Column lg={3}>
+            <Column lg={3} key={item.title}>
               <div className='card'>
                 <img src={`/assets/cards/${item.image}`} />
                 <h2 className='title-card' fontWeight={'bold'}>
