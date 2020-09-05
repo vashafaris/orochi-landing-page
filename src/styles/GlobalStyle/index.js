@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'SF Pro Display', 'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI',  'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    color: white;
+    color: #D6D6D6;
     background: black;
   }
 `;

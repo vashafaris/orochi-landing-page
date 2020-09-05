@@ -6,7 +6,6 @@ import {
   CharacterSection,
   Orochi,
   TrailerSection,
-  TrailerVideo,
   OSTSection,
   POSection,
   Honda,
@@ -85,11 +84,15 @@ export default function Home() {
       </LandingSection>
 
       <TrailerSection>
-        <iframe
-          height='400'
-          width='700'
-          src='https://www.youtube.com/embed/pGqfPJ5UTAY'
-        ></iframe>
+        <div className='iframe-container'>
+          <iframe
+            height='400'
+            width='700'
+            src='https://www.youtube.com/embed/pGqfPJ5UTAY'
+            frameborder='0'
+          ></iframe>
+        </div>
+
         <img src='/assets/trailer/bg-left.png' alt='' className='bg-left' />
         <img src='/assets/trailer/bg-right.png' alt='' className='bg-right' />
       </TrailerSection>

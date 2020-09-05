@@ -61,6 +61,13 @@ export const TrailerSection = styled.section`
   justify-content: center;
   align-items: center;
 
+  .iframe-container {
+    width: 700px;
+    height: 400px;
+    border-radius: 0.8rem;
+    overflow: hidden;
+  }
+
   .bg-left {
     z-index: -1;
     position: absolute;
@@ -82,6 +89,7 @@ export const TrailerSection = styled.section`
 export const TrailerVideo = styled.iframe`
   width: 70rem;
   height: 40rem;
+  border-radius: 0.8rem;
 `;
 
 export const CardSection = styled.section`
@@ -106,6 +114,7 @@ export const CardSection = styled.section`
 
     .description-card {
       font-size: 1.4rem;
+      line-height: 2.2rem;
       font-family: 'SF Pro Text';
       font-weight: medium;
     }
@@ -178,12 +187,13 @@ export const Orochi = styled.div`
   }
 
   .info-up {
-    display: block
+    display: flex;
+    flex-direction: column;
     z-index: 2;
     position: absolute;
     left: 65%;
     top: 30%;
-    width: 25%;
+    width: 30%;
     transform: translate(1rem, -1rem);
 
     @media (max-width: 1277px) {
@@ -192,7 +202,8 @@ export const Orochi = styled.div`
   }
 
   .info-down {
-    display: block;
+    display: flex;
+    flex-direction: column;
     z-index: 2;
     position: absolute;
     left: 65%;
@@ -219,10 +230,11 @@ export const Orochi = styled.div`
 
   .description-char {
     color: #d6d6d6;
-    line-height: 1.5rem;
+    line-height: 2.2rem;
     font-size: 1.4rem;
     font-family: 'SF Pro Text';
     font-weight: medium;
+    margin-top: 0.4rem;
   }
 
   .name {
@@ -346,10 +358,11 @@ export const Honda = styled.div`
 
   .description-char {
     color: #d6d6d6;
-    line-height: 1.5rem;
+    line-height: 2.2rem;
     font-size: 1.4rem;
     font-family: 'SF Pro Text';
     font-weight: medium;
+    margin-top: 0.4rem;
   }
 `;
 
@@ -463,10 +476,11 @@ export const Lubu = styled.div`
 
   .description-char {
     color: #d6d6d6;
-    line-height: 1.5rem;
+    line-height: 2.2rem;
     font-size: 1.4rem;
     font-family: 'SF Pro Text';
     font-weight: medium;
+    margin-top: 0.4rem;
   }
 `;
 
