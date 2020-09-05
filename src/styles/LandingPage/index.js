@@ -98,6 +98,17 @@ export const CardSection = styled.section`
   .card {
     display: block;
     padding: 0.5rem;
+
+    .title-card {
+      font-size: 2.4rem;
+      font-weight: semibold;
+    }
+
+    .description-card {
+      font-size: 1.4rem;
+      font-family: 'SF Pro Text';
+      font-weight: medium;
+    }
   }
 `;
 
@@ -167,7 +178,7 @@ export const Orochi = styled.div`
   }
 
   .info-up {
-    display: block;
+    display: block
     z-index: 2;
     position: absolute;
     left: 65%;
@@ -181,8 +192,7 @@ export const Orochi = styled.div`
   }
 
   .info-down {
-    display: flex;
-    flex-direction: column;
+    display: block;
     z-index: 2;
     position: absolute;
     left: 65%;
@@ -233,7 +243,6 @@ export const Honda = styled.div`
   .name {
     position: absolute;
     right: 20%;
-    /* top: 5%; */
     transform: translate(0, -50%);
     max-height: 50%;
     font-size: 2.8rem;
@@ -310,8 +319,7 @@ export const Honda = styled.div`
   }
 
   .info-down {
-    display: flex;
-    flex-direction: column;
+    display: block;
     z-index: 2;
     position: absolute;
     left: 10%;
@@ -428,8 +436,7 @@ export const Lubu = styled.div`
   }
 
   .info-down {
-    display: flex;
-    flex-direction: column;
+    display: block;
     z-index: 2;
     position: absolute;
     left: 52%;
