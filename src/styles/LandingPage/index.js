@@ -110,6 +110,7 @@ export const CardSection = styled.section`
     .title-card {
       font-size: 2.4rem;
       font-weight: semibold;
+      line-height: 0.4;
     }
 
     .description-card {
@@ -117,6 +118,7 @@ export const CardSection = styled.section`
       line-height: 2.2rem;
       font-family: 'SF Pro Text';
       font-weight: medium;
+      margin-top: 0.4rem;
     }
   }
 `;
