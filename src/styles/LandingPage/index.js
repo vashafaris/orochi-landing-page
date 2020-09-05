@@ -167,7 +167,7 @@ export const Orochi = styled.div`
   }
 
   .info-up {
-    display: block;
+    display: block
     z-index: 2;
     position: absolute;
     left: 65%;
@@ -181,8 +181,7 @@ export const Orochi = styled.div`
   }
 
   .info-down {
-    display: flex;
-    flex-direction: column;
+    display: block;
     z-index: 2;
     position: absolute;
     left: 65%;
@@ -310,8 +309,7 @@ export const Honda = styled.div`
   }
 
   .info-down {
-    display: flex;
-    flex-direction: column;
+    display: block;
     z-index: 2;
     position: absolute;
     left: 10%;
@@ -428,8 +426,7 @@ export const Lubu = styled.div`
   }
 
   .info-down {
-    display: flex;
-    flex-direction: column;
+    display: block;
     z-index: 2;
     position: absolute;
     left: 52%;
