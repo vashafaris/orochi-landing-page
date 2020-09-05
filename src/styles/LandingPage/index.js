@@ -59,6 +59,21 @@ export const TrailerSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .bg-left {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+
+  .bg-right {
+    z-index: -1;
+    position: absolute;
+    bottom: -30%;
+    right: 0;
+  }
 `;
 
 export const TrailerVideo = styled.iframe`
@@ -74,10 +89,7 @@ export const CardSection = styled.section`
 
   img {
     position: relative;
-    width: auto;
-    height: auto;
     max-width: 100%;
-    /* padding: 0.5rem; */
   }
 
   .card {
@@ -88,12 +100,13 @@ export const CardSection = styled.section`
 
 export const CharacterSection = styled.section`
   position: relative;
-  height: 100vh;
-
+  min-height: 100vh;
+  margin-top: 7.2rem;
   .title {
     display: flex;
     justify-content: center;
-
+    position: relative;
+    height: 7.2rem;
     h1 {
       font-size: 6rem;
       font-weight: bold;
@@ -102,13 +115,14 @@ export const CharacterSection = styled.section`
 `;
 
 export const Orochi = styled.div`
+  position: relative;
+  height: 100vh;
+
   .background {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: auto;
-    height: auto;
     max-width: 70%;
   }
 
@@ -117,8 +131,6 @@ export const Orochi = styled.div`
     left: 25%;
     top: 50%;
     transform: translate(0, -50%);
-    width: auto;
-    height: auto;
     max-height: 75%;
     z-index: 1;
   }
@@ -128,8 +140,6 @@ export const Orochi = styled.div`
     left: 15%;
     top: 50%;
     transform: translate(0, -50%);
-    width: auto;
-    height: auto;
     max-height: 50%;
   }
 
@@ -147,7 +157,7 @@ export const Orochi = styled.div`
     z-index: 2;
     position: absolute;
     right: 35%;
-    bottom: 30%;
+    top: 70%;
     width: auto;
     height: auto;
     max-width: 20%;
@@ -161,16 +171,25 @@ export const Orochi = styled.div`
     top: 30%;
     width: 25%;
     transform: translate(1rem, -1rem);
+
+    @media (max-width: 1277px) {
+      transform: translate(1rem, -0.8rem);
+    }
   }
 
   .info-down {
-    display: block;
+    display: flex;
+    flex-direction: column;
     z-index: 2;
     position: absolute;
     right: 10%;
-    bottom: 20%;
+    top: 70%;
     width: 25%;
     transform: translate(1rem, -1.2rem);
+
+    @media (max-width: 1277px) {
+      transform: translate(1rem, -0.8rem);
+    }
   }
 
   .title-char {
@@ -179,6 +198,10 @@ export const Orochi = styled.div`
     font-weight: bold;
     position: relative;
     line-height: 0;
+
+    @media (max-width: 1277px) {
+      font-size: 2rem;
+    }
   }
 
   .description-char {
@@ -194,10 +217,326 @@ export const Orochi = styled.div`
     left: 30%;
     top: 10%;
     transform: translate(0, -50%);
-    width: auto;
-    height: auto;
     max-height: 50%;
     font-size: 2.8rem;
     font-family: 'SF Pro Display';
+  }
+`;
+
+export const Honda = styled.div`
+  position: relative;
+  height: 100vh;
+
+  .name {
+    position: absolute;
+    right: 20%;
+    /* top: 5%; */
+    transform: translate(0, -50%);
+    max-height: 50%;
+    font-size: 2.8rem;
+    font-family: 'SF Pro Display';
+  }
+
+  .background {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+  }
+
+  .primary-img {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translate(0, -50%);
+    max-height: 75%;
+    z-index: 1;
+  }
+
+  .line-up-img {
+    z-index: 2;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    max-width: 35%;
+  }
+
+  .line-middle-img {
+    z-index: 2;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    max-width: 20%;
+  }
+
+  .line-down-img {
+    z-index: 2;
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    max-width: 10%;
+  }
+
+  .info-up {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 22%;
+    transform: translate(1rem, -1rem);
+
+    @media (max-width: 1277px) {
+      transform: translate(1rem, -0.8rem);
+    }
+  }
+
+  .info-middle {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    width: 25%;
+    transform: translate(1rem, -1rem);
+
+    @media (max-width: 1277px) {
+      transform: translate(1rem, -0.8rem);
+    }
+  }
+
+  .info-down {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    width: 22%;
+    transform: translate(1rem, -1.2rem);
+
+    @media (max-width: 1277px) {
+      transform: translate(1rem, -0.8rem);
+    }
+  }
+
+  .title-char {
+    left: 0;
+    font-size: 2.4rem;
+    font-weight: bold;
+    position: relative;
+    line-height: 0;
+
+    @media (max-width: 1277px) {
+      font-size: 2rem;
+    }
+  }
+
+  .description-char {
+    color: #d6d6d6;
+    line-height: 1.5rem;
+    font-size: 1.4rem;
+    font-family: 'SF Pro Text';
+    font-weight: medium;
+  }
+`;
+
+export const Lubu = styled.div`
+  position: relative;
+  height: 100vh;
+
+  .name {
+    position: absolute;
+    left: 13%;
+    transform: translate(0, -50%);
+    max-height: 50%;
+    font-size: 2.8rem;
+    font-family: 'SF Pro Display';
+  }
+
+  .background {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    transform: translate(0, -50%);
+    max-width: 50%;
+  }
+
+  .primary-img {
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    transform: translate(0, -50%);
+    max-height: 75%;
+    z-index: 1;
+  }
+
+  .line-up-img {
+    z-index: 2;
+    position: absolute;
+    right: 50%;
+    top: 10%;
+    max-width: 25%;
+  }
+
+  .line-middle-img {
+    z-index: 2;
+    position: absolute;
+    right: 50%;
+    top: 45%;
+    max-width: 15%;
+  }
+
+  .line-down-img {
+    z-index: 2;
+    position: absolute;
+    right: 50%;
+    top: 70%;
+    max-width: 10%;
+  }
+
+  .info-up {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    left: 52%;
+    top: 10%;
+    width: 25%;
+    transform: translate(1rem, -1rem);
+
+    @media (max-width: 1277px) {
+      transform: translate(1rem, -0.8rem);
+    }
+  }
+
+  .info-middle {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    left: 52%;
+    top: 45%;
+    width: 25%;
+    transform: translate(1rem, -1rem);
+
+    @media (max-width: 1277px) {
+      transform: translate(1rem, -0.8rem);
+    }
+  }
+
+  .info-down {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    position: absolute;
+    left: 52%;
+    top: 70%;
+    width: 40%;
+    transform: translate(1rem, -1.2rem);
+
+    @media (max-width: 1277px) {
+      transform: translate(1rem, -0.8rem);
+    }
+  }
+
+  .title-char {
+    left: 0;
+    font-size: 2.4rem;
+    font-weight: bold;
+    position: relative;
+    line-height: 0;
+
+    @media (max-width: 1277px) {
+      font-size: 2rem;
+    }
+  }
+
+  .description-char {
+    color: #d6d6d6;
+    line-height: 1.5rem;
+    font-size: 1.4rem;
+    font-family: 'SF Pro Text';
+    font-weight: medium;
+  }
+`;
+
+export const OSTSection = styled.section`
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title-ost {
+    font-size: 6rem;
+    margin: 1.6rem;
+    margin-top: 6.7rem;
+  }
+
+  .description {
+    font-family: 'SF Pro Text';
+    font-size: 1.8rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    letter-spacing: 1%;
+    line-height: 150%;
+  }
+
+  .ost-img {
+    max-width: 65%;
+  }
+
+  .bg-img {
+    z-index: -1;
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    max-height: 67%;
+  }
+`;
+
+export const POSection = styled.section`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+
+  .title {
+    font-size: 6rem;
+    margin: 1.6rem;
+    margin-top: 6.7rem;
+  }
+
+  .description {
+    font-family: 'SF Pro Text';
+    font-size: 1.8rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    letter-spacing: 1%;
+    line-height: 150%;
+  }
+
+  .console-container {
+    margin: 1.6rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .console {
+      width: auto;
+      height: auto;
+      max-width: 20%;
+    }
+  }
+
+  .dvd-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .dvd {
+      max-width: 80%;
+    }
   }
 `;
