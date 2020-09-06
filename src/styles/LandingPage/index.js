@@ -312,7 +312,7 @@ export const Honda = styled.div`
     position: absolute;
     left: 10%;
     top: 10%;
-    width: 22%;
+    width: 30%;
     transform: translate(1rem, -1rem);
 
     @media (max-width: 1277px) {
