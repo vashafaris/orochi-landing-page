@@ -2,11 +2,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 running code : https://orochi-landing-page.vercel.app/
 
-![](public/images/ss-landing.png)
-![](public/images/ss-orochi.png)
-![](public/images/ss-os.png)
-![](public/images/ss-po.png)
-
 ## Getting Started
 
 First, run:
