@@ -1,6 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-running code : https://orochi-landing-page.vercel.app/
+Running code: https://orochi-landing-page.vercel.app/
 
 ## Getting Started
 
